@@ -40,6 +40,8 @@
 
 ​    [mvcc](docs/database/mysql/innodb-implementation-of-mvcc.md)
 
+​    [mysql零碎知识点](docs/database/mysql/mysql零碎小知识.md)
+
 ### Oracle
 
 ​     [Oracle使用总结](docs/database/oracle/oracle使用总结.md)
