@@ -1,4 +1,6 @@
-﻿﻿# 谈谈RPC 和 http
+﻿﻿﻿﻿# 谈谈RPC 和 http
+
+[视频地址](https://www.bilibili.com/video/BV1Qv4y127B4/?spm_id_from=333.337.search-card.all.click)
 
 > **RPC：Remote Procedure Call，远程过程调用**
 
@@ -52,7 +54,7 @@ HTTP 不提供数据包的传输功能，也就是数据包从浏览器到服务
 
 其实 HTTP 协议的格式很像我们信封，有个固定的格式。
 
-[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-OURZdaCO-1669710013288)(https://upload-images.jianshu.io/upload_images/6943526-1cdab6a28767865c?imageMogr2/auto-orient/strip|imageView2/2/w/550/format/webp)]
+![alt](https://upload-images.jianshu.io/upload_images/6943526-1cdab6a28767865c?imageMogr2/auto-orient/strip)
 
 左上角写邮编，右上角贴邮票，然后地址姓名啥的依次来。
 
@@ -64,7 +66,7 @@ HTTP 不提供数据包的传输功能，也就是数据包从浏览器到服务
 
 响应就状态行、响应报头、响应体。
 
-[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-UWo5Sl2s-1669710013290)(https://upload-images.jianshu.io/upload_images/6943526-e8974cac3b44ed13?imageMogr2/auto-orient/strip|imageView2/2/w/1080/format/webp)]
+![](https://upload-images.jianshu.io/upload_images/6943526-e8974cac3b44ed13?imageMogr2/auto-orient/strip|imageView2/2/w/1080/format/webp)]
 
 所以 HTTP 的本质是什么？
 
@@ -98,7 +100,7 @@ public User getUserById(Long id) {
 
 可能还有些小伙伴不太清楚，再来看个图。
 
-[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-eTCn1u85-1669710013291)(https://upload-images.jianshu.io/upload_images/6943526-6b7bb733274d3c2f?imageMogr2/auto-orient/strip|imageView2/2/w/1080/format/webp)]
+![](https://upload-images.jianshu.io/upload_images/6943526-6b7bb733274d3c2f?imageMogr2/auto-orient/strip|imageView2/2/w/1080/format/webp)]
 
 把之前的用户实现拆分出来弄了一个用户服务，订单相关的也拆成了订单服务，都单独部署。
 
@@ -146,7 +148,7 @@ RPC 和 HTTP 的之间的关系也清楚了。
 
 在说 RPC 和 HTTP 的区别之前，我觉的有必要了解一下 OSI 的七层网络结构模型（
 
-[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-fTgeoxAp-1669710013292)(https://upload-images.jianshu.io/upload_images/6943526-58602808f256e0bd?imageMogr2/auto-orient/strip|imageView2/2/w/778/format/webp)]
+![](https://upload-images.jianshu.io/upload_images/6943526-58602808f256e0bd?imageMogr2/auto-orient/strip|imageView2/2/w/778/format/webp)]
 
 它可以分为以下几层：（从上到下）
 
@@ -158,7 +160,7 @@ RPC 和 HTTP 的之间的关系也清楚了。
 - **第六层：链路层。**将上面的网络层的数据包封装成数据帧，便于物理层传输。
 - **第七层：物理层。**这一层主要就是传输这些二进制数据。
 
-[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-YhfZNGS3-1669710013293)(https://upload-images.jianshu.io/upload_images/6943526-95ecf6996957472a?imageMogr2/auto-orient/strip|imageView2/2/w/1080/format/webp)]
+![](https://upload-images.jianshu.io/upload_images/6943526-95ecf6996957472a?imageMogr2/auto-orient/strip|imageView2/2/w/1080/format/webp)]
 
 > **实际应用过程中，五层协议结构里面是没有表示层和会话层的。应该说它们和应用层合并了。**
 
@@ -185,7 +187,7 @@ RPC 和 HTTP 的之间的关系也清楚了。
 - **Client Stub**
 - **Server Stub（这个Stub大家可以理解为存根）**
 
-[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-2L6io5zI-1669710013294)(https://upload-images.jianshu.io/upload_images/6943526-1e9048626457fb6c?imageMogr2/auto-orient/strip|imageView2/2/w/1080/format/webp)]
+![](https://upload-images.jianshu.io/upload_images/6943526-1e9048626457fb6c?imageMogr2/auto-orient/strip|imageView2/2/w/1080/format/webp)]
 
 分别说说这几个组件：
 
@@ -254,7 +256,143 @@ POST http://www.httpexample.com/restful/buyer/info/shar
 
 其次就是 RPC 框架一般都有注册中心，有丰富的监控管理；发布、下线接口、动态扩展等，对调用方来说是无感知、统一化的操作。
 
-## 小结
+## rpc和http 区别
+
+> **为啥不能用HTTP请求，要用RPC调用?**
+
+1、RPC是一个完整的远程调用方案，它通常包括**通信协议和序列化协议**
+
+- ​		   **通信协议**包含http协议（如gRPC使用http2）、自定义报文的tcp协议（如dubbo）
+- ​			**序列化协议**包含基于文本编码的xml、json，基于二进制编码的protobuf、hessian等
+
+2、HTTP只是一个通信协议，不是一个完整的远程调用方案
+
+**也就是说，`HTTP和RPC不是对等的概念`，用来比较不太合适**
+
+> **为什么有些后端子系统之间是使用自定义tcp协议的rpc来做进程通信？而不是用HTTP协议呢**
+
+首先，http协议是**支持连接池复用**的，也就是建立一定数量的连接不断开，并不会频繁的创建和销毁连接
+
+然后，http也可以使用protobuf这种二进制编码协议对内容进行编码
+
+也就是说连接建立与断开的开销和序列化协议并不是主要影响因素
+
+二者最大的区别还是在**传输协议**上
+
+http的传输协议中header部分有很多**冗余**的部分，像Content-Type、Last-Modified、Expires等
+
+即使http body是使用二进制编码协议，header头的键值对却用了文本编码，非常占用字节数
+
+而自定义的tcp协议，可以精简传输内容，传输效率更高。比如下面的自定义tcp协议的报文：
+
+```js
+1-4 byte，length
+5-8 byte，type
+9-16 byte，package_id
+17-length+16 byte，package_data
+```
+
+报头占用的字节数也就只有16个byte，大大地减少了传输内容。高并发情况下，少几个字节，乘以巨大的请求数量，能带来庞大的收益
+
+因此，对于性能要求比较高的系统来说，通常使用自定义tcp协议的rpc来做后端进程通信
+
+​    其实使用http协议比较多的还是前后端的通信，原因在于主流网页游览器都支持http协议，而且http在缓存、幂等重试乃至cookie这种浏览器安全相关的方面做了很多功夫
+
+# webSocket 和http
+
+[观看视频](https://www.bilibili.com/video/BV1684y1k7VP/?spm_id_from=333.337.search-card.all.click&vd_source=f7c1ba83c4aef508fd68946015318efb)
+
+## 什么是websocket
+
+- WebSocket是HTML5下一种新的协议（websocket协议本质上是一个基于tcp的协议）
+- 它实现了浏览器与服务器全双工通信，能更好的节省服务器资源和带宽并达到实时通讯的目的
+- Websocket是一个**持久化**的协议
+
+## websocket的原理
+
+1. websocket约定了一个通信的规范，通过一个握手的机制，客户端和服务器之间能建立一个类似tcp的连接，从而方便它们之间的通信
+2. 在websocket出现之前，web交互一般是基于http协议的短连接或者长连接
+3. websocket是一种全新的协议，不属于http无状态协议，协议名为"ws"
+
+## websocket与http的关系
+
+![](https://img-blog.csdnimg.cn/45259e81df6b4455bdcfcad460a3a8bf.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAb2hhbmHvvIE=,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+>  **相同点：**
+>
+> 1. **都是基于tcp的，都是可靠性传输协议**
+> 2. **都是应用层协议**
+
+> **不同点：**
+>
+> 1. **WebSocket是双向通信协议，模拟Socket协议，可以双向发送或接受信息**
+> 2. **HTTP是单向的**
+> 3. **WebSocket是需要浏览器和服务器握手进行建立连接的**
+> 4. **而http是浏览器发起向服务器的连接，服务器预先并不知道这个连接**
+
+> **联系：**
+>
+> - WebSocket在建立握手时，数据是通过HTTP传输的。但是建立之后，在真正传输时候是不需要HTTP协议的
+
+> **总结（总体过程）：**
+>
+> 1. **首先，客户端发起http请求，经过3次握手后，建立起TCP连接；http请求里存放WebSocket支持的版本号等信息，如：Upgrade、Connection、WebSocket-Version等；**
+> 2. **然后，服务器收到客户端的握手请求后，同样采用HTTP协议回馈数据；**
+> 3. **最后，客户端收到连接成功的消息后，开始借助于TCP传输信道进行全双工通信。**
+
+## websocket解决的问题
+
+### 1.http存在的问题
+
+- http是一种无状态协议，每当一次会话完成后，服务端都不知道下一次的客户端是谁，需要每次知道对方是谁，才进行相应的响应，因此本身对于实时通讯就是一种极大的障碍
+- http协议采用一次请求，一次响应，每次请求和响应就携带有大量的header头，对于实时通讯来说，解析请求头也是需要一定的时间，因此，效率也更低下
+- 最重要的是，需要客户端主动发，服务端被动发，也就是一次请求，一次响应，不能实现主动发送
+
+### 2.long poll(长[轮询](https://so.csdn.net/so/search?q=轮询&spm=1001.2101.3001.7020))
+
+- 对于以上情况就出现了http解决的第一个方法——长轮询
+- 基于http的特性，简单点说，就是客户端发起长轮询，如果服务端的数据没有发生变更，会 hold 住请求，直到服务端的数据发生变化，或者等待一定时间超时才会返回。返回后，客户端又会立即再次发起下一次长轮询
+- 优点是解决了http不能实时更新的弊端，因为这个时间很短，发起请求即处理请求返回响应，实现了“伪·长连接”
+- 张三取快递的例子，张三今天一定要取到快递，他就一直站在快递点，等待快递一到，立马取走
+
+>  从例子上来看有个问题：
+>
+> 1. 假如有好多人一起在快递站等快递，那么这个地方是否足够大，（抽象解释：需要有很高的并发，同时有很多请求等待在这里）
+
+总的来看：
+
+- 推送延迟。服务端数据发生变更后，长[轮询](https://so.csdn.net/so/search?q=轮询&spm=1001.2101.3001.7020)结束，立刻返回响应给客户端。
+- 服务端压力。长轮询的间隔期一般很长，例如 30s、60s，并且服务端 hold 住连接不会消耗太多服务端资源。
+
+### 3.[Ajax](https://so.csdn.net/so/search?q=Ajax&spm=1001.2101.3001.7020)轮询
+
+- 基于http的特性，简单点说，就是规定每隔一段时间就由客户端发起一次请求，查询有没有新消息，如果有，就返回，如果没有等待相同的时间间隔再次询问
+- 优点是解决了http不能实时更新的弊端，因为这个时间很短，发起请求即处理请求返回响应，把这个过程放大n倍，本质上还是request = response
+- 举个形象的例子（假设张三今天有个快递快到了，但是张三忍耐不住，就每隔十分钟给快递员或者快递站打电话，询问快递到了没，每次快递员就说还没到，等到下午张三的快递到了，but，快递员不知道哪个电话是张三的，（可不是只有张三打电话，还有李四，王五），所以只能等张三打电话，才能通知他，你的快递到了）
+
+> 从例子上来看有两个问题：
+>
+> 1. 假如说，张三打电话的时间间隔为10分钟，当他收到快递前最后一次打电话，快递员说没到，他刚挂掉电话，快递入库了（就是到了），那么等下一次时间到了，张三打电话知道快递到了，那么这样的通讯算不算实时通讯？很显然，不算，中间有十分钟的时间差，还不算给快递员打电话的等待时间（抽象的解释：每次request的请求时间间隔等同于十分钟，请求解析相当于等待）
+> 2. 假如说张三所在的小区每天要收很多快递，每个人都采取主动给快递员打电话的方式，那么快递员需要以多快的速度接到，其他人打电话占线也是问题（抽象解释：请求过多，服务端响应也会变慢）
+
+- 总的来看，Ajax轮询存在的问题：
+
+1. 推送延迟。
+2. 服务端压力。配置一般不会发生变化，频繁的轮询会给服务端造成很大的压力。
+3. 推送延迟和服务端压力无法中和。降低轮询的间隔，延迟降低，压力增加；增加轮询的间隔，压力降低，延迟增高
+
+### 4.websocket的改进
+
+一旦WebSocket连接建立后，后续数据都以帧序列的形式传输。在客户端断开WebSocket连接或Server端中断连接前，不需要客户端和服务端重新发起连接请求。在海量并发及客户端与服务器交互负载流量大的情况下，极大的节省了网络带宽资源的消耗，有明显的性能优势，且客户端发送和接受消息是在同一个持久连接上发起，实现了“真·长链接”，实时性优势明显。
+
+![](https://img-blog.csdnimg.cn/b4f3c4efafd24359be26dc3166569f76.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAb2hhbmHvvIE=,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+WebSocket有以下特点：
+
+- 是真正的全双工方式，建立连接后客户端与服务器端是完全平等的，可以互相主动请求。而HTTP长连接基于HTTP，是传统的客户端对服务器发起请求的模式。
+- HTTP长连接中，每次数据交换除了真正的数据部分外，服务器和客户端还要大量交换HTTP header，信息交换效率很低。Websocket协议通过第一个request建立了TCP连接之后，之后交换的数据都不需要发送 HTTP header就能交换数据，这显然和原有的HTTP协议有区别所以它需要对服务器和客户端都进行升级才能实现（主流浏览器都已支持HTML5）
+
+# 小结
 
 RPC 服务和 HTTP 服务还是存在很多的不同点的，一般来说，RPC 服务主要是针对大型企业的，而 HTTP 服务主要是针对小企业的，因为 RPC 效率更高，而 HTTP 服务开发迭代会更快。
 
@@ -271,5 +409,21 @@ RPC 服务和 HTTP 服务还是存在很多的不同点的，一般来说，RPC 
 总之，选用什么样的框架不是按照市场上流行什么而决定的，而是要对整个项目进行完整地评估，从而在仔细比较两种开发框架对于整个项目的影响，最后再决定什么才是最适合这个项目的。
 
 一定不要为了使用 RPC 而每个项目都用 RPC，而是要因地制宜，具体情况具体分析。
+
+
+
+---
+
+---
+
+
+
+  rpc是总称，http只是一种rpc实现。rpc有grpc，thrift，mina 这种，多得很。 普通rpc在性能和特性上比http好，但是http有个最大的好处，标准化和实现广泛。任何语言都实现了http的客户端服务器，2个不同程序交互简单太多。大部分程序都有http接口，你使用起来就方便。如果是grpc，你还得重新实现。运用最广泛的方案就是好方案。
+
+
+
+
+
+
 
 ![alt](https://img-blog.csdnimg.cn/img_convert/075346a9f647e9d85e5627d56e9b6e05.gif)
