@@ -10,7 +10,7 @@
 
 ### Spring 相关
 
-
+​    [Spring如何解决循环依赖](docs/框架/spring/Spring如何解决循环依赖.md)
 
 ### ORM框架
 
@@ -56,6 +56,10 @@
 
 
 
+## 网络编程
+
+[谈谈http和rpc](docs/network/谈谈RPC.md)
+
 ## JVM
 
    [jvm运行时数据](docs/jvm/jvm运行时数据区与内存溢出异常.md)
@@ -66,3 +70,8 @@
 
   [JUC进阶学习](docs/并发/JUC并发编程学习.md)     [地址：JUC进阶学习](https://gitee.com/zhangjunjie007/juc-advanced-learning)
 
+
+
+## 常用工具tips
+
+[idea常用小技巧](docs/tools/idea常用快捷键.md)
