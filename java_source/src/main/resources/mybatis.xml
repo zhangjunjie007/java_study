@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "https://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <properties resource="db.properties"/>
+    <settings>
+        <!-- 打印查询语句 -->
+        <setting name="logImpl" value="STDOUT_LOGGING" />
+    </settings>
+    <typeAliases>
+        <package name="com.zjj.domain.User"/>
+    </typeAliases>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--注册mapper配置文件（mapper文件路径配置）
+          url:网络上的映射文件
+          注意：映射配置文件位置要和映射器位置一样，如：映射器在com.mycode.dao里，
+                那么配置文件就应该在resources的com/mycode/dao目录下，否则会报
+                Could not find resource com.mycode.dao.UserMapper.xml类似错误
+      -->
+    <mappers>
+        <!--下面编写mapper映射文件↓↓↓↓↓ 参考格式：<mapper resource="dao/UserMapper.xml"/> -->
+        <package name="com.zjj.mapper"/>
+    </mappers>
+
+</configuration>

@@ -1,0 +1,58 @@
+<project xmlns = "http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation = "http://maven.apache.org/POM/4.0.0
+    http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <version>2.5.3</version>
+    </parent>
+    <!-- 模型版本 -->
+    <modelVersion>4.0.0</modelVersion>
+    <!-- 公司或者组织的唯一标志，也是打包成jar包路径的依据 -->
+    <!-- 例如com.companyname.project-group，maven打包jar包的路径：/com/companyname/project-group -->
+    <groupId>com.zjj.lww</groupId>
+
+    <!-- 项目的唯一ID，一个groupId下面可能多个项目，就是靠artifactId来区分的 -->
+    <artifactId>java_study</artifactId>
+
+    <!-- 项目当前版本，格式为:主版本.次版本.增量版本-限定版本号 -->
+    <version>1.0</version>
+    <modules>
+        <module>java_source</module>
+    </modules>
+
+
+    <!--动态设置依赖版本 -->
+    <properties>
+        <lombok_version>1.18.24</lombok_version>
+        <mybatis_version>3.5.11</mybatis_version>
+        <mysql_ver>8.0.25</mysql_ver>
+    </properties>
+    <!--项目产生的构件类型，包括jar、war、ear、pom等 -->
+    <packaging>pom</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok_version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis_version}</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql_ver}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+    </dependencies>
+
+</project>
