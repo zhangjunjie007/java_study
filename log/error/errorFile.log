@@ -6,3 +6,11 @@
 ### SQL: update user set status=? where id = ?
 ### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'status' at row 1
 ; Data truncation: Data too long for column 'status' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'status' at row 1
+2022-12-27 12:32:08,772 ERROR  [http-nio-8081-exec-6] (TransactionalDemoController.java:49)- 执行更新报错
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'status' at row 1
+### The error may exist in com/zjj/mapper/UserMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update user set status=? where id = ?
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'status' at row 1
+; Data truncation: Data too long for column 'status' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'status' at row 1

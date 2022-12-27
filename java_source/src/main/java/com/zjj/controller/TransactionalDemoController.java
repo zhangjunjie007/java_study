@@ -4,10 +4,12 @@ import com.zjj.domain.CommonRespo;
 import com.zjj.service.UserService;
 import com.zjj.util.CommonRespoUtil;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.aop.framework.AopContext;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.TransactionStatus;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.DefaultTransactionDefinition;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -28,7 +30,6 @@ public class TransactionalDemoController {
 
     @Resource
     PlatformTransactionManager transactionManager ;
-
     @RequestMapping(value = "",method = {RequestMethod.GET,RequestMethod.POST})
     public CommonRespo<String> testTransaction(@RequestParam int param_1,@RequestParam int param_2){
         log.info("进入到方法【{}】",param_1);
