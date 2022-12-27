@@ -1,0 +1,897 @@
+2022-12-26 08:20:25,722 INFO  [main] (StartupInfoLogger.java:55)- Starting MainApp using Java 1.8.0_321 on zjj-001 with PID 24956 (E:\java_project\java_study\java_source\target\classes started by 17310 in E:\java_project\java_study)
+2022-12-26 08:20:25,726 INFO  [main] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2022-12-26 08:20:26,934 INFO  [main] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8081 (http)
+2022-12-26 08:20:26,946 INFO  [main] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8081"]
+2022-12-26 08:20:26,946 INFO  [main] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-12-26 08:20:26,946 INFO  [main] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-26 08:20:27,018 INFO  [main] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-12-26 08:20:27,018 INFO  [main] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1268 ms
+2022-12-26 08:20:27,657 INFO  [main] (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8081"]
+2022-12-26 08:20:27,682 INFO  [main] (TomcatWebServer.java:220)- Tomcat started on port(s): 8081 (http) with context path ''
+2022-12-26 08:20:27,694 INFO  [main] (StartupInfoLogger.java:61)- Started MainApp in 2.325 seconds (JVM running for 3.637)
+2022-12-26 08:20:42,641 INFO  [http-nio-8081-exec-1] (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-26 08:20:42,645 INFO  [http-nio-8081-exec-1] (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-12-26 08:20:42,646 INFO  [http-nio-8081-exec-1] (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2022-12-26 08:20:42,678 INFO  [http-nio-8081-exec-1] (TransactionalDemoController.java:25)- 进入到方法【14】
+2022-12-26 08:20:42,695 INFO  [http-nio-8081-exec-1] (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-12-26 08:20:43,249 INFO  [http-nio-8081-exec-1] (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-12-26 08:20:43,282 INFO  [http-nio-8081-exec-1] (UserServiceImpl.java:19)- 查询用户【14】的返回值为【User(id=14, name=一二一, address=你猜, status=1)】
+2022-12-26 08:42:35,795 INFO  [SpringApplicationShutdownHook] (HikariDataSource.java:350)- HikariPool-1 - Shutdown initiated...
+2022-12-26 08:42:35,806 INFO  [SpringApplicationShutdownHook] (HikariDataSource.java:352)- HikariPool-1 - Shutdown completed.
+2022-12-26 08:42:40,253 ERROR  [main] (LoggingFailureAnalysisReporter.java:40)- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level' to java.util.Map<java.lang.String, org.springframework.boot.logging.LogLevel>:
+
+    Reason: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.Map<java.lang.String, org.springframework.boot.logging.LogLevel>]
+
+Action:
+
+Update your application's configuration
+
+2022-12-26 08:42:52,804 INFO  [main] (StartupInfoLogger.java:55)- Starting MainApp using Java 1.8.0_321 on zjj-001 with PID 18012 (E:\java_project\java_study\java_source\target\classes started by 17310 in E:\java_project\java_study)
+2022-12-26 08:42:52,804 INFO  [main] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2022-12-26 08:42:53,891 INFO  [main] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8081 (http)
+2022-12-26 08:42:53,899 INFO  [main] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8081"]
+2022-12-26 08:42:53,899 INFO  [main] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-12-26 08:42:53,899 INFO  [main] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-26 08:42:53,975 INFO  [main] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-12-26 08:42:53,979 INFO  [main] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1146 ms
+2022-12-26 08:42:54,365 INFO  [main] (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8081"]
+2022-12-26 08:42:54,373 INFO  [main] (TomcatWebServer.java:220)- Tomcat started on port(s): 8081 (http) with context path ''
+2022-12-26 08:42:54,381 INFO  [main] (StartupInfoLogger.java:61)- Started MainApp in 1.914 seconds (JVM running for 2.816)
+2022-12-26 08:43:16,930 INFO  [http-nio-8081-exec-1] (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-26 08:43:16,930 INFO  [http-nio-8081-exec-1] (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-12-26 08:43:16,930 INFO  [http-nio-8081-exec-1] (FrameworkServlet.java:547)- Completed initialization in 0 ms
+2022-12-26 08:43:16,958 INFO  [http-nio-8081-exec-1] (TransactionalDemoController.java:25)- 进入到方法【14】
+2022-12-26 08:43:16,974 INFO  [http-nio-8081-exec-1] (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-12-26 08:43:17,548 INFO  [http-nio-8081-exec-1] (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-12-26 08:43:17,589 INFO  [http-nio-8081-exec-1] (UserServiceImpl.java:19)- 查询用户【14】的返回值为【User(id=14, name=一二一, address=你猜, status=1)】
+2022-12-26 08:45:18,123 INFO  [SpringApplicationShutdownHook] (HikariDataSource.java:350)- HikariPool-1 - Shutdown initiated...
+2022-12-26 08:45:18,131 INFO  [SpringApplicationShutdownHook] (HikariDataSource.java:352)- HikariPool-1 - Shutdown completed.
+2022-12-26 08:45:22,209 INFO  [main] (StartupInfoLogger.java:55)- Starting MainApp using Java 1.8.0_321 on zjj-001 with PID 3636 (E:\java_project\java_study\java_source\target\classes started by 17310 in E:\java_project\java_study)
+2022-12-26 08:45:22,211 INFO  [main] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2022-12-26 08:45:23,327 INFO  [main] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8081 (http)
+2022-12-26 08:45:23,335 INFO  [main] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8081"]
+2022-12-26 08:45:23,335 INFO  [main] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-12-26 08:45:23,335 INFO  [main] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-26 08:45:23,381 INFO  [main] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-12-26 08:45:23,381 INFO  [main] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1137 ms
+2022-12-26 08:45:23,524 WARN  [main] (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionalDemoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\java_project\java_study\java_source\target\classes\com\zjj\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource com/zjj/mapper/*
+2022-12-26 08:45:23,524 INFO  [main] (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2022-12-26 08:45:23,531 INFO  [main] (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-26 08:45:23,575 ERROR  [main] (SpringApplication.java:843)- Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionalDemoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\java_project\java_study\java_source\target\classes\com\zjj\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource com/zjj/mapper/*
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.MainApp.main(MainApp.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\java_project\java_study\java_source\target\classes\com\zjj\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource com/zjj/mapper/*
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:521)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:497)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:650)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:318)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\java_project\java_study\java_source\target\classes\com\zjj\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource com/zjj/mapper/*
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1516)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:527)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:497)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:650)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:318)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource com/zjj/mapper/*
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1501)
+	... 47 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource com/zjj/mapper/*
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 60 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource com/zjj/mapper/*
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:590)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:188)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$5b59de7.CGLIB$sqlSessionFactory$1(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$5b59de7$$FastClassBySpringCGLIB$$6ac9c817.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$5b59de7.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 61 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource com/zjj/mapper/*
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:122)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:587)
+	... 74 common frames omitted
+Caused by: java.io.IOException: Could not find resource com/zjj/mapper/*
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114)
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:378)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:120)
+	... 76 common frames omitted
+2022-12-26 08:45:45,635 INFO  [main] (StartupInfoLogger.java:55)- Starting MainApp using Java 1.8.0_321 on zjj-001 with PID 23512 (E:\java_project\java_study\java_source\target\classes started by 17310 in E:\java_project\java_study)
+2022-12-26 08:45:45,637 INFO  [main] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2022-12-26 08:45:46,726 INFO  [main] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8081 (http)
+2022-12-26 08:45:46,734 INFO  [main] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8081"]
+2022-12-26 08:45:46,734 INFO  [main] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-12-26 08:45:46,734 INFO  [main] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-26 08:45:46,813 INFO  [main] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-12-26 08:45:46,813 INFO  [main] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1145 ms
+2022-12-26 08:45:46,945 WARN  [main] (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionalDemoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\java_project\java_study\java_source\target\classes\com\zjj\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource com/zjj/mapper/*.xml
+2022-12-26 08:45:46,949 INFO  [main] (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2022-12-26 08:45:46,957 INFO  [main] (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-26 08:45:46,969 ERROR  [main] (SpringApplication.java:843)- Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionalDemoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\java_project\java_study\java_source\target\classes\com\zjj\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource com/zjj/mapper/*.xml
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.MainApp.main(MainApp.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\java_project\java_study\java_source\target\classes\com\zjj\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource com/zjj/mapper/*.xml
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:521)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:497)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:650)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:318)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userMapper' defined in file [E:\java_project\java_study\java_source\target\classes\com\zjj\mapper\UserMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource com/zjj/mapper/*.xml
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1516)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:527)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:497)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:650)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:318)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource com/zjj/mapper/*.xml
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1501)
+	... 47 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource com/zjj/mapper/*.xml
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 60 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse config resource: class path resource [mybatis.xml]; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource com/zjj/mapper/*.xml
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:590)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:188)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$a64fc9d.CGLIB$sqlSessionFactory$2(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$a64fc9d$$FastClassBySpringCGLIB$$374d1039.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$a64fc9d.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 61 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing SQL Mapper Configuration. Cause: java.io.IOException: Could not find resource com/zjj/mapper/*.xml
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:122)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parse(XMLConfigBuilder.java:99)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:587)
+	... 74 common frames omitted
+Caused by: java.io.IOException: Could not find resource com/zjj/mapper/*.xml
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:114)
+	at org.apache.ibatis.io.Resources.getResourceAsStream(Resources.java:100)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.mapperElement(XMLConfigBuilder.java:378)
+	at org.apache.ibatis.builder.xml.XMLConfigBuilder.parseConfiguration(XMLConfigBuilder.java:120)
+	... 76 common frames omitted
+2022-12-26 08:46:41,118 INFO  [main] (StartupInfoLogger.java:55)- Starting MainApp using Java 1.8.0_321 on zjj-001 with PID 20284 (E:\java_project\java_study\java_source\target\classes started by 17310 in E:\java_project\java_study)
+2022-12-26 08:46:41,122 INFO  [main] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2022-12-26 08:46:42,226 INFO  [main] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8081 (http)
+2022-12-26 08:46:42,230 INFO  [main] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8081"]
+2022-12-26 08:46:42,230 INFO  [main] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-12-26 08:46:42,234 INFO  [main] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-26 08:46:42,278 INFO  [main] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-12-26 08:46:42,282 INFO  [main] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1127 ms
+2022-12-26 08:46:42,666 INFO  [main] (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8081"]
+2022-12-26 08:46:42,674 INFO  [main] (TomcatWebServer.java:220)- Tomcat started on port(s): 8081 (http) with context path ''
+2022-12-26 08:46:42,682 INFO  [main] (StartupInfoLogger.java:61)- Started MainApp in 1.926 seconds (JVM running for 2.731)
+2022-12-26 08:46:56,376 INFO  [http-nio-8081-exec-2] (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-26 08:46:56,376 INFO  [http-nio-8081-exec-2] (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-12-26 08:46:56,376 INFO  [http-nio-8081-exec-2] (FrameworkServlet.java:547)- Completed initialization in 0 ms
+2022-12-26 08:46:56,408 INFO  [http-nio-8081-exec-2] (TransactionalDemoController.java:25)- 进入到方法【14】
+2022-12-26 08:46:56,421 ERROR  [http-nio-8081-exec-2] (DirectJDKLog.java:175)- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.zjj.mapper.UserMapper.getUserById] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.zjj.mapper.UserMapper.getUserById
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedInvoker$0(MapperProxy.java:108)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.apache.ibatis.util.MapUtil.computeIfAbsent(MapUtil.java:35)
+	at org.apache.ibatis.binding.MapperProxy.cachedInvoker(MapperProxy.java:95)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy61.getUserById(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy62.getUserById(Unknown Source)
+	at com.zjj.service.impl.UserServiceImpl.updateUserStatus(UserServiceImpl.java:18)
+	at com.zjj.controller.TransactionalDemoController.testTransaction(TransactionalDemoController.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2022-12-26 08:47:49,725 INFO  [main] (StartupInfoLogger.java:55)- Starting MainApp using Java 1.8.0_321 on zjj-001 with PID 10364 (E:\java_project\java_study\java_source\target\classes started by 17310 in E:\java_project\java_study)
+2022-12-26 08:47:49,729 INFO  [main] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2022-12-26 08:47:50,846 INFO  [main] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8081 (http)
+2022-12-26 08:47:50,851 INFO  [main] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8081"]
+2022-12-26 08:47:50,855 INFO  [main] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-12-26 08:47:50,855 INFO  [main] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-26 08:47:50,931 INFO  [main] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-12-26 08:47:50,931 INFO  [main] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1173 ms
+2022-12-26 08:47:51,331 INFO  [main] (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8081"]
+2022-12-26 08:47:51,343 INFO  [main] (TomcatWebServer.java:220)- Tomcat started on port(s): 8081 (http) with context path ''
+2022-12-26 08:47:51,354 INFO  [main] (StartupInfoLogger.java:61)- Started MainApp in 1.975 seconds (JVM running for 2.843)
+2022-12-26 08:47:59,595 INFO  [http-nio-8081-exec-3] (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-26 08:47:59,599 INFO  [http-nio-8081-exec-3] (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-12-26 08:47:59,599 INFO  [http-nio-8081-exec-3] (FrameworkServlet.java:547)- Completed initialization in 0 ms
+2022-12-26 08:47:59,627 INFO  [http-nio-8081-exec-3] (TransactionalDemoController.java:25)- 进入到方法【14】
+2022-12-26 08:47:59,640 INFO  [http-nio-8081-exec-3] (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-12-26 08:48:00,170 INFO  [http-nio-8081-exec-3] (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-12-26 08:48:00,198 INFO  [http-nio-8081-exec-3] (UserServiceImpl.java:19)- 查询用户【14】的返回值为【User(id=14, name=一二一, address=你猜, status=1)】
+2022-12-26 08:50:10,899 INFO  [SpringApplicationShutdownHook] (HikariDataSource.java:350)- HikariPool-1 - Shutdown initiated...
+2022-12-26 08:50:10,911 INFO  [SpringApplicationShutdownHook] (HikariDataSource.java:352)- HikariPool-1 - Shutdown completed.
+2022-12-26 08:50:14,968 INFO  [main] (StartupInfoLogger.java:55)- Starting MainApp using Java 1.8.0_321 on zjj-001 with PID 1528 (E:\java_project\java_study\java_source\target\classes started by 17310 in E:\java_project\java_study)
+2022-12-26 08:50:14,973 INFO  [main] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2022-12-26 08:50:16,060 INFO  [main] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8081 (http)
+2022-12-26 08:50:16,068 INFO  [main] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8081"]
+2022-12-26 08:50:16,068 INFO  [main] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-12-26 08:50:16,068 INFO  [main] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-26 08:50:16,150 INFO  [main] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-12-26 08:50:16,150 INFO  [main] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1145 ms
+2022-12-26 08:50:16,612 INFO  [main] (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8081"]
+2022-12-26 08:50:16,625 INFO  [main] (TomcatWebServer.java:220)- Tomcat started on port(s): 8081 (http) with context path ''
+2022-12-26 08:50:16,632 INFO  [main] (StartupInfoLogger.java:61)- Started MainApp in 2.032 seconds (JVM running for 2.894)
+2022-12-26 08:50:24,913 INFO  [http-nio-8081-exec-2] (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-26 08:50:24,913 INFO  [http-nio-8081-exec-2] (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-12-26 08:50:24,913 INFO  [http-nio-8081-exec-2] (FrameworkServlet.java:547)- Completed initialization in 0 ms
+2022-12-26 08:50:24,942 INFO  [http-nio-8081-exec-2] (TransactionalDemoController.java:25)- 进入到方法【14】
+2022-12-26 08:50:24,954 INFO  [http-nio-8081-exec-2] (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-12-26 08:50:25,527 INFO  [http-nio-8081-exec-2] (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-12-26 08:50:25,571 INFO  [http-nio-8081-exec-2] (UserServiceImpl.java:19)- 查询用户【14】的返回值为【User(id=14, name=一二一, address=你猜, status=1)】
+2022-12-26 09:06:08,707 INFO  [SpringApplicationShutdownHook] (HikariDataSource.java:350)- HikariPool-1 - Shutdown initiated...
+2022-12-26 09:06:08,715 INFO  [SpringApplicationShutdownHook] (HikariDataSource.java:352)- HikariPool-1 - Shutdown completed.
+2022-12-26 09:06:24,646 INFO  [main] (StartupInfoLogger.java:55)- Starting MainApp using Java 1.8.0_321 on zjj-001 with PID 25680 (E:\java_project\java_study\java_source\target\classes started by 17310 in E:\java_project\java_study)
+2022-12-26 09:06:24,649 INFO  [main] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2022-12-26 09:06:25,706 WARN  [main] (Logger.java:44)- No MyBatis mapper was found in '[com]' package. Please check your configuration.
+2022-12-26 09:06:25,908 INFO  [main] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8081 (http)
+2022-12-26 09:06:25,914 INFO  [main] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8081"]
+2022-12-26 09:06:25,914 INFO  [main] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-12-26 09:06:25,915 INFO  [main] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-26 09:06:25,972 INFO  [main] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-12-26 09:06:25,972 INFO  [main] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1287 ms
+2022-12-26 09:06:26,003 WARN  [main] (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionalDemoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zjj.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2022-12-26 09:06:26,005 INFO  [main] (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2022-12-26 09:06:26,013 INFO  [main] (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-26 09:06:26,025 ERROR  [main] (LoggingFailureAnalysisReporter.java:40)- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.zjj.mapper.UserMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.zjj.mapper.UserMapper' in your configuration.
+
+2022-12-26 09:07:06,046 INFO  [main] (StartupInfoLogger.java:55)- Starting MainApp using Java 1.8.0_321 on zjj-001 with PID 12020 (E:\java_project\java_study\java_source\target\classes started by 17310 in E:\java_project\java_study)
+2022-12-26 09:07:06,048 INFO  [main] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2022-12-26 09:07:07,210 INFO  [main] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8081 (http)
+2022-12-26 09:07:07,215 INFO  [main] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8081"]
+2022-12-26 09:07:07,216 INFO  [main] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-12-26 09:07:07,216 INFO  [main] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-26 09:07:07,257 INFO  [main] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-12-26 09:07:07,258 INFO  [main] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1188 ms
+2022-12-26 09:07:07,312 WARN  [main] (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionalDemoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [E:\java_project\java_study\java_source\target\classes\com\zjj\mapper\UserMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-12-26 09:07:07,314 INFO  [main] (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2022-12-26 09:07:07,323 INFO  [main] (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-26 09:07:07,333 ERROR  [main] (LoggingFailureAnalysisReporter.java:40)- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-12-26 09:14:12,402 INFO  [main] (StartupInfoLogger.java:55)- Starting MainApp using Java 1.8.0_321 on zjj-001 with PID 25816 (E:\java_project\java_study\java_source\target\classes started by 17310 in E:\java_project\java_study)
+2022-12-26 09:14:12,404 INFO  [main] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2022-12-26 09:14:13,494 WARN  [main] (Logger.java:44)- No MyBatis mapper was found in '[com]' package. Please check your configuration.
+2022-12-26 09:14:13,718 INFO  [main] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8081 (http)
+2022-12-26 09:14:13,723 INFO  [main] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8081"]
+2022-12-26 09:14:13,723 INFO  [main] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-12-26 09:14:13,723 INFO  [main] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-26 09:14:13,772 INFO  [main] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-12-26 09:14:13,772 INFO  [main] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1343 ms
+2022-12-26 09:14:13,803 WARN  [main] (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionalDemoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zjj.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2022-12-26 09:14:13,805 INFO  [main] (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2022-12-26 09:14:13,813 INFO  [main] (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-26 09:14:13,825 ERROR  [main] (LoggingFailureAnalysisReporter.java:40)- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.zjj.mapper.UserMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.zjj.mapper.UserMapper' in your configuration.
+
+2022-12-26 09:14:33,985 INFO  [main] (StartupInfoLogger.java:55)- Starting MainApp using Java 1.8.0_321 on zjj-001 with PID 416 (E:\java_project\java_study\java_source\target\classes started by 17310 in E:\java_project\java_study)
+2022-12-26 09:14:33,987 INFO  [main] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2022-12-26 09:14:35,332 INFO  [main] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8081 (http)
+2022-12-26 09:14:35,342 INFO  [main] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8081"]
+2022-12-26 09:14:35,343 INFO  [main] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-12-26 09:14:35,343 INFO  [main] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-26 09:14:35,452 INFO  [main] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-12-26 09:14:35,452 INFO  [main] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1439 ms
+2022-12-26 09:14:35,501 WARN  [main] (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionalDemoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [E:\java_project\java_study\java_source\target\classes\com\zjj\mapper\UserMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-12-26 09:14:35,503 INFO  [main] (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2022-12-26 09:14:35,512 INFO  [main] (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-26 09:14:35,525 ERROR  [main] (LoggingFailureAnalysisReporter.java:40)- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-12-26 09:28:13,053 INFO  [main] (StartupInfoLogger.java:55)- Starting MainApp using Java 1.8.0_321 on zjj-001 with PID 24508 (E:\java_project\java_study\java_source\target\classes started by 17310 in E:\java_project\java_study)
+2022-12-26 09:28:13,053 INFO  [main] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2022-12-26 09:28:14,174 INFO  [main] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8081 (http)
+2022-12-26 09:28:14,174 INFO  [main] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8081"]
+2022-12-26 09:28:14,174 INFO  [main] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-12-26 09:28:14,174 INFO  [main] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-26 09:28:14,219 INFO  [main] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-12-26 09:28:14,219 INFO  [main] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1143 ms
+2022-12-26 09:28:14,264 WARN  [main] (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionalDemoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zjj.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2022-12-26 09:28:14,265 INFO  [main] (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2022-12-26 09:28:14,265 INFO  [main] (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-26 09:28:14,285 ERROR  [main] (LoggingFailureAnalysisReporter.java:40)- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.zjj.mapper.UserMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.zjj.mapper.UserMapper' in your configuration.
+
+2022-12-26 09:29:06,491 INFO  [main] (StartupInfoLogger.java:55)- Starting MainApp using Java 1.8.0_321 on zjj-001 with PID 12892 (E:\java_project\java_study\java_source\target\classes started by 17310 in E:\java_project\java_study)
+2022-12-26 09:29:06,491 INFO  [main] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2022-12-26 09:29:07,583 INFO  [main] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8081 (http)
+2022-12-26 09:29:07,583 INFO  [main] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8081"]
+2022-12-26 09:29:07,583 INFO  [main] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-12-26 09:29:07,599 INFO  [main] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-26 09:29:07,649 INFO  [main] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-12-26 09:29:07,649 INFO  [main] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1136 ms
+2022-12-26 09:29:07,671 WARN  [main] (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionalDemoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.zjj.mapper.UserMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2022-12-26 09:29:07,671 INFO  [main] (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2022-12-26 09:29:07,694 INFO  [main] (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-26 09:29:07,694 ERROR  [main] (LoggingFailureAnalysisReporter.java:40)- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.zjj.mapper.UserMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.zjj.mapper.UserMapper' in your configuration.
+
+2022-12-26 09:29:40,367 INFO  [main] (StartupInfoLogger.java:55)- Starting MainApp using Java 1.8.0_321 on zjj-001 with PID 28468 (E:\java_project\java_study\java_source\target\classes started by 17310 in E:\java_project\java_study)
+2022-12-26 09:29:40,369 INFO  [main] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2022-12-26 09:29:41,471 INFO  [main] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8081 (http)
+2022-12-26 09:29:41,471 INFO  [main] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8081"]
+2022-12-26 09:29:41,471 INFO  [main] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-12-26 09:29:41,471 INFO  [main] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-26 09:29:41,520 INFO  [main] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-12-26 09:29:41,520 INFO  [main] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1127 ms
+2022-12-26 09:29:41,560 WARN  [main] (AbstractApplicationContext.java:591)- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionalDemoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [E:\java_project\java_study\java_source\target\classes\com\zjj\mapper\UserMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+2022-12-26 09:29:41,560 INFO  [main] (DirectJDKLog.java:173)- Stopping service [Tomcat]
+2022-12-26 09:29:41,560 INFO  [main] (ConditionEvaluationReportLoggingListener.java:136)- 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-26 09:29:41,583 ERROR  [main] (SpringApplication.java:843)- Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transactionalDemoController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [E:\java_project\java_study\java_source\target\classes\com\zjj\mapper\UserMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.MainApp.main(MainApp.java:12)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [E:\java_project\java_study\java_source\target\classes\com\zjj\mapper\UserMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:521)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:497)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:650)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:318)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [E:\java_project\java_study\java_source\target\classes\com\zjj\mapper\UserMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:527)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:497)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:650)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:318)
+	... 33 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Property 'sqlSessionFactory' or 'sqlSessionTemplate' are required
+	at org.springframework.util.Assert.notNull(Assert.java:201)
+	at org.mybatis.spring.support.SqlSessionDaoSupport.checkDaoConfig(SqlSessionDaoSupport.java:122)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:73)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 46 common frames omitted
+2022-12-26 09:32:36,790 INFO  [main] (StartupInfoLogger.java:55)- Starting MainApp using Java 1.8.0_321 on zjj-001 with PID 21280 (E:\java_project\java_study\java_source\target\classes started by 17310 in E:\java_project\java_study)
+2022-12-26 09:32:36,790 INFO  [main] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2022-12-26 09:32:38,011 INFO  [main] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8081 (http)
+2022-12-26 09:32:38,015 INFO  [main] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8081"]
+2022-12-26 09:32:38,015 INFO  [main] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-12-26 09:32:38,015 INFO  [main] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-26 09:32:38,059 INFO  [main] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-12-26 09:32:38,059 INFO  [main] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1230 ms
+2022-12-26 09:32:38,568 INFO  [main] (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8081"]
+2022-12-26 09:32:38,570 INFO  [main] (TomcatWebServer.java:220)- Tomcat started on port(s): 8081 (http) with context path ''
+2022-12-26 09:32:38,589 INFO  [main] (StartupInfoLogger.java:61)- Started MainApp in 2.196 seconds (JVM running for 2.947)
+2022-12-26 09:32:49,351 INFO  [http-nio-8081-exec-3] (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-26 09:32:49,351 INFO  [http-nio-8081-exec-3] (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-12-26 09:32:49,351 INFO  [http-nio-8081-exec-3] (FrameworkServlet.java:547)- Completed initialization in 0 ms
+2022-12-26 09:32:49,388 INFO  [http-nio-8081-exec-3] (TransactionalDemoController.java:25)- 进入到方法【14】
+2022-12-26 09:32:49,394 INFO  [http-nio-8081-exec-3] (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-12-26 09:32:49,994 INFO  [http-nio-8081-exec-3] (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-12-26 09:32:50,039 INFO  [http-nio-8081-exec-3] (UserServiceImpl.java:19)- 查询用户【14】的返回值为【User(id=14, name=一二一, address=你猜, status=1)】
+2022-12-26 14:51:21,928 WARN  [HikariPool-1 housekeeper] (HikariPool.java:788)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h18m1s626ms928µs400ns).
+2022-12-26 15:15:50,560 INFO  [SpringApplicationShutdownHook] (HikariDataSource.java:350)- HikariPool-1 - Shutdown initiated...
+2022-12-26 15:15:50,576 INFO  [SpringApplicationShutdownHook] (HikariDataSource.java:352)- HikariPool-1 - Shutdown completed.
+2022-12-26 15:41:01,699 INFO  [main] (StartupInfoLogger.java:55)- Starting MainApp using Java 1.8.0_321 on zjj-001 with PID 21904 (E:\java_project\java_study\java_source\target\classes started by 17310 in E:\java_project\java_study)
+2022-12-26 15:41:01,715 INFO  [main] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2022-12-26 15:41:02,735 INFO  [main] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8081 (http)
+2022-12-26 15:41:02,750 INFO  [main] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8081"]
+2022-12-26 15:41:02,750 INFO  [main] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-12-26 15:41:02,750 INFO  [main] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-26 15:41:02,782 INFO  [main] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-12-26 15:41:02,782 INFO  [main] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1051 ms
+2022-12-26 15:41:03,160 INFO  [main] (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8081"]
+2022-12-26 15:41:03,176 INFO  [main] (TomcatWebServer.java:220)- Tomcat started on port(s): 8081 (http) with context path ''
+2022-12-26 15:41:03,176 INFO  [main] (StartupInfoLogger.java:61)- Started MainApp in 1.763 seconds (JVM running for 3.103)
+2022-12-26 15:42:41,209 INFO  [http-nio-8081-exec-2] (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-26 15:42:41,209 INFO  [http-nio-8081-exec-2] (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-12-26 15:42:41,211 INFO  [http-nio-8081-exec-2] (FrameworkServlet.java:547)- Completed initialization in 2 ms
+2022-12-26 15:42:41,238 WARN  [http-nio-8081-exec-2] (AbstractHandlerExceptionResolver.java:207)- Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'param_2' for method parameter type int is not present]
+2022-12-26 15:42:59,630 INFO  [http-nio-8081-exec-4] (TransactionalDemoController.java:25)- 进入到方法【14】
+2022-12-26 15:42:59,630 INFO  [http-nio-8081-exec-4] (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-12-26 15:43:00,148 INFO  [http-nio-8081-exec-4] (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-12-26 15:43:00,193 INFO  [http-nio-8081-exec-4] (UserServiceImpl.java:21)- 查询用户【14】的返回值为【User(id=14, name=一二一, address=你猜, status=1)】
+2022-12-26 15:43:00,234 INFO  [http-nio-8081-exec-4] (UserServiceImpl.java:21)- 查询用户【15】的返回值为【User(id=15, name=一二一, address=你猜, status=1)】
+2022-12-26 15:43:00,320 ERROR  [http-nio-8081-exec-4] (DirectJDKLog.java:175)- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'status' at row 1
+### The error may exist in com/zjj/mapper/UserMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update user set status=? where id = ?
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'status' at row 1
+; Data truncation: Data too long for column 'status' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'status' at row 1] with root cause
+com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'status' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy75.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy61.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:288)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy62.updateUserById(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy63.updateUserById(Unknown Source)
+	at com.zjj.service.impl.UserServiceImpl.updateUserStatus(UserServiceImpl.java:23)
+	at com.zjj.service.impl.UserServiceImpl$$FastClassBySpringCGLIB$$494cb056.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at com.zjj.service.impl.UserServiceImpl$$EnhancerBySpringCGLIB$$4c710174.updateUserStatus(<generated>)
+	at com.zjj.controller.TransactionalDemoController.testTransaction(TransactionalDemoController.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2022-12-26 15:55:42,289 INFO  [SpringApplicationShutdownHook] (HikariDataSource.java:350)- HikariPool-1 - Shutdown initiated...
+2022-12-26 15:55:42,307 INFO  [SpringApplicationShutdownHook] (HikariDataSource.java:352)- HikariPool-1 - Shutdown completed.
+2022-12-26 15:55:46,226 INFO  [main] (StartupInfoLogger.java:55)- Starting MainApp using Java 1.8.0_321 on zjj-001 with PID 27276 (E:\java_project\java_study\java_source\target\classes started by 17310 in E:\java_project\java_study)
+2022-12-26 15:55:46,226 INFO  [main] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2022-12-26 15:55:47,268 INFO  [main] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8081 (http)
+2022-12-26 15:55:47,268 INFO  [main] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8081"]
+2022-12-26 15:55:47,268 INFO  [main] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-12-26 15:55:47,268 INFO  [main] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-26 15:55:47,316 INFO  [main] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-12-26 15:55:47,316 INFO  [main] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1059 ms
+2022-12-26 15:55:47,695 INFO  [main] (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8081"]
+2022-12-26 15:55:47,710 INFO  [main] (TomcatWebServer.java:220)- Tomcat started on port(s): 8081 (http) with context path ''
+2022-12-26 15:55:47,710 INFO  [main] (StartupInfoLogger.java:61)- Started MainApp in 1.802 seconds (JVM running for 2.591)
+2022-12-26 15:56:08,751 INFO  [http-nio-8081-exec-3] (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-26 15:56:08,751 INFO  [http-nio-8081-exec-3] (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-12-26 15:56:08,752 INFO  [http-nio-8081-exec-3] (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2022-12-26 15:56:08,778 INFO  [http-nio-8081-exec-3] (TransactionalDemoController.java:34)- 进入到方法【14】
+2022-12-26 15:56:08,778 INFO  [http-nio-8081-exec-3] (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-12-26 15:56:09,325 INFO  [http-nio-8081-exec-3] (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-12-26 15:56:09,365 INFO  [http-nio-8081-exec-3] (UserServiceImpl.java:21)- 查询用户【14】的返回值为【User(id=14, name=一二一, address=你猜, status=1)】
+2022-12-26 15:56:09,384 INFO  [http-nio-8081-exec-3] (UserServiceImpl.java:21)- 查询用户【15】的返回值为【User(id=15, name=一二一, address=你猜, status=1)】
+2022-12-26 15:59:51,000 INFO  [http-nio-8081-exec-5] (TransactionalDemoController.java:34)- 进入到方法【14】
+2022-12-26 15:59:51,015 INFO  [http-nio-8081-exec-5] (UserServiceImpl.java:21)- 查询用户【14】的返回值为【User(id=14, name=一二一, address=你猜, status=1)】
+2022-12-26 15:59:51,015 INFO  [http-nio-8081-exec-5] (UserServiceImpl.java:21)- 查询用户【15】的返回值为【User(id=15, name=一二一, address=你猜, status=1)】
+2022-12-26 15:59:51,015 ERROR  [http-nio-8081-exec-5] (TransactionalDemoController.java:49)- 执行更新报错
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'status' at row 1
+### The error may exist in com/zjj/mapper/UserMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update user set status=? where id = ?
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'status' at row 1
+; Data truncation: Data too long for column 'status' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'status' at row 1
+2022-12-26 16:00:26,053 INFO  [http-nio-8081-exec-6] (TransactionalDemoController.java:34)- 进入到方法【14】
+2022-12-26 16:00:54,885 WARN  [HikariPool-1 housekeeper] (HikariPool.java:788)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s364ms752µs900ns).
+2022-12-26 16:00:54,892 INFO  [http-nio-8081-exec-6] (UserServiceImpl.java:21)- 查询用户【14】的返回值为【User(id=14, name=一二一, address=你猜, status=1)】
+2022-12-26 16:00:54,902 INFO  [http-nio-8081-exec-6] (UserServiceImpl.java:21)- 查询用户【15】的返回值为【User(id=15, name=一二一, address=你猜, status=1)】
+2022-12-26 16:00:54,902 ERROR  [http-nio-8081-exec-6] (TransactionalDemoController.java:49)- 执行更新报错
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'status' at row 1
+### The error may exist in com/zjj/mapper/UserMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update user set status=? where id = ?
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'status' at row 1
+; Data truncation: Data too long for column 'status' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'status' at row 1
+2022-12-26 16:47:29,944 INFO  [SpringApplicationShutdownHook] (HikariDataSource.java:350)- HikariPool-1 - Shutdown initiated...
+2022-12-26 16:47:29,944 INFO  [SpringApplicationShutdownHook] (HikariDataSource.java:352)- HikariPool-1 - Shutdown completed.
+2022-12-26 16:47:38,314 INFO  [main] (StartupInfoLogger.java:55)- Starting MainApp using Java 1.8.0_321 on zjj-001 with PID 7404 (E:\java_project\java_study\java_source\target\classes started by 17310 in E:\java_project\java_study)
+2022-12-26 16:47:38,314 INFO  [main] (SpringApplication.java:659)- No active profile set, falling back to default profiles: default
+2022-12-26 16:47:39,341 INFO  [main] (TomcatWebServer.java:108)- Tomcat initialized with port(s): 8081 (http)
+2022-12-26 16:47:39,356 INFO  [main] (DirectJDKLog.java:173)- Initializing ProtocolHandler ["http-nio-8081"]
+2022-12-26 16:47:39,356 INFO  [main] (DirectJDKLog.java:173)- Starting service [Tomcat]
+2022-12-26 16:47:39,356 INFO  [main] (DirectJDKLog.java:173)- Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-12-26 16:47:39,388 INFO  [main] (DirectJDKLog.java:173)- Initializing Spring embedded WebApplicationContext
+2022-12-26 16:47:39,388 INFO  [main] (ServletWebServerApplicationContext.java:290)- Root WebApplicationContext: initialization completed in 1042 ms
+2022-12-26 16:47:39,771 INFO  [main] (DirectJDKLog.java:173)- Starting ProtocolHandler ["http-nio-8081"]
+2022-12-26 16:47:39,771 INFO  [main] (TomcatWebServer.java:220)- Tomcat started on port(s): 8081 (http) with context path ''
+2022-12-26 16:47:39,784 INFO  [main] (StartupInfoLogger.java:61)- Started MainApp in 1.775 seconds (JVM running for 2.615)
+2022-12-26 17:02:40,309 INFO  [http-nio-8081-exec-1] (DirectJDKLog.java:173)- Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-26 17:02:40,324 INFO  [http-nio-8081-exec-1] (FrameworkServlet.java:525)- Initializing Servlet 'dispatcherServlet'
+2022-12-26 17:02:40,325 INFO  [http-nio-8081-exec-1] (FrameworkServlet.java:547)- Completed initialization in 1 ms
+2022-12-26 17:02:40,348 INFO  [http-nio-8081-exec-1] (TransactionalDemoController.java:34)- 进入到方法【14】
+2022-12-26 17:02:40,348 INFO  [http-nio-8081-exec-1] (HikariDataSource.java:110)- HikariPool-1 - Starting...
+2022-12-26 17:02:40,872 INFO  [http-nio-8081-exec-1] (HikariDataSource.java:123)- HikariPool-1 - Start completed.
+2022-12-26 17:02:40,951 INFO  [http-nio-8081-exec-1] (UserServiceImpl.java:21)- 查询用户【14】的返回值为【User(id=14, name=一二一, address=你猜, status=1)】
+2022-12-26 17:02:40,978 INFO  [http-nio-8081-exec-1] (UserServiceImpl.java:21)- 查询用户【15】的返回值为【User(id=15, name=一二一, address=你猜, status=1)】
+2022-12-26 17:02:41,049 ERROR  [http-nio-8081-exec-1] (TransactionalDemoController.java:49)- 执行更新报错
+### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'status' at row 1
+### The error may exist in com/zjj/mapper/UserMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: update user set status=? where id = ?
+### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'status' at row 1
+; Data truncation: Data too long for column 'status' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'status' at row 1
+2022-12-26 18:35:58,265 WARN  [HikariPool-1 housekeeper] (HikariPool.java:788)- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m15s431ms248µs600ns).

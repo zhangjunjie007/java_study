@@ -29,9 +29,11 @@
         <lombok_version>1.18.24</lombok_version>
         <mybatis_version>3.5.11</mybatis_version>
         <mysql_ver>8.0.25</mysql_ver>
+        <mybatis_boot_ver>2.2.2</mybatis_boot_ver>
     </properties>
     <!--项目产生的构件类型，包括jar、war、ear、pom等 -->
     <packaging>pom</packaging>
+    <dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -51,8 +53,9 @@
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.2.2</version>
+            <version>${mybatis_boot_ver}</version>
         </dependency>
     </dependencies>
+    </dependencyManagement>
 
 </project>

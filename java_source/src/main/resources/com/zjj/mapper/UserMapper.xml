@@ -7,7 +7,7 @@
     </select>
 
     <update id="updateUserById">
-        update user set status='10' where id = #{userId}
+        update user set status=#{status} where id = #{userId}
     </update>
 
 

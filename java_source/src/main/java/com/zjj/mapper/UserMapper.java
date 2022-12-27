@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 public interface UserMapper {
    User getUserById(int userId);
 
-   void updateUserById(int userId);
+   void updateUserById(int userId,int status);
 }

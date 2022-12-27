@@ -4,5 +4,5 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface UserService {
-   void updateUserStatus(int id);
+   void updateUserStatus(int id,int status);
 }
