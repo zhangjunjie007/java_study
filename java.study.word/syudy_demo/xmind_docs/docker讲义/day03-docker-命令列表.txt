@@ -1,0 +1,211 @@
+1.【镜像操作】
+	docker --help
+	docker images --help
+
+	docker images  查看镜像
+
+	docker pull 拉取镜像
+	docker pull nginx
+	docker pull nginx:1.21.6
+	docker pull redis:7.0.0
+
+	docker rmi     删除镜像
+	docker rmi nginx:latest
+
+	docker save  保存镜像到一个压缩包
+	docker save -o nginx.tar nginx:latest
+	
+	docker load  加载压缩包为镜像
+	docker load -i nginx.tar
+
+3.【容器操作】
+	-- 容器命令
+		启动一个容器
+		docker run -it ubuntu /bin/bash (i-交互  , t-终端)
+		docker run --name nginx1 -p 80:80 -d nginx:1.21.6
+
+		查看容器
+		docker ps		
+		docker ps -a
+
+		查看容器日志
+		docker logs nginx1
+		docker logs -f nginx1
+		
+		进入容器(后台运行的容器)
+		docker exec -it nginx1 /bin/bash
+		
+		#进入容器，改nginx文件内容
+		docker exec -it nginx1 bash
+		
+		-- 改nginx页面内容
+			cd /usr/share/nginx/html
+			sed -i -e 's#Welcome to nginx#传智教育欢迎您#g' -e 's#<head>#<head><meta charset="utf-8">#g' index.html
+			http://192.168.100.101
+
+
+		docker rm  删除容器
+		docker rm 容器id|容器名称
+		docker rm -f 容器id  // -f  强制删除运行中的容器
+		docker rm nginx1
+
+		docker stop 容器ID|容器名称  停止容器
+		docker stop nginx1
+		
+		docker start   启动一个已停止的容器
+		docker start nginx1
+		
+		-- 创建redis容器
+		 docker run --name redis1 -p 6379:6379 -d redis:7.0 redis-server --appendonly yes
+		
+	-- 数据卷
+		/var/lib/docker/volumes/
+		
+		docker volume 命令
+		docker volume --help
+		
+		docker volume create   创建数据卷
+		docker volume create html
+		
+		docker volume inspect  显示数据卷信息
+		docker volume inspect html
+		
+		docker volume ls       列出数据卷
+		
+		docker volume prune    删除所有未使用的数据卷
+		
+		docker volume rm       删除数据卷
+		docker volume rm html
+		
+		docker run xxx -v html:/root/html  挂载数据卷:把html数据卷挂载到容器内的/root/html这个目录中
+		
+		#案例: 挂载数据卷
+		docker run --name nginx1 -v html:/usr/share/nginx/html -p 80:80 -d nginx:1.21.6
+		进入html数据卷所在位置，并修改HTML内容			
+			# 查看html数据卷的位置
+			docker volume inspect html
+			# 进入该目录
+			cd /var/lib/docker/volumes/html/_data
+			# 修改文件
+			vi index.html
+			  <meta charset="UTF-8">
+
+		#自动创建数据卷
+		#案例不提前创建数据卷，直接创建nginx容器(创建时指定 -v参数)
+		 docker会自动创建数据卷
+		 docker run --name nginx1 -v html:/usr/share/nginx/html -p 80:80 -d nginx:1.21.6
+
+		#将宿主机目录挂载到容器(nginx)
+		 mkdir /soft/html
+		 chmod a+x /soft/html
+		 docker run --name nginx1 -v /soft/html:/usr/share/nginx/html -p 80:80 -d nginx:1.21.6
+
+		#将宿主机目录挂载到容器(mysql)
+			mkdir -p /tmp/mysql/data
+			mkdir -p /tmp/mysql/conf
+			
+			上传hmy.cnf到 /tmp/mysql/conf
+
+			docker run \
+			--name mysql \
+			--restart=always \
+			-e MYSQL_ROOT_PASSWORD=root \
+			-e TZ=Asia/Shanghai \
+			-p 3306:3306 \
+			-v /tmp/mysql/conf/hmy.cnf:/etc/mysql/conf.d/hmy.cnf \
+			-v /tmp/mysql/data:/var/lib/mysql \
+			-d \
+			mysql:5.7.25		
+		
+4. 【Dockerfile自定义镜像】
+	--	镜像构建命令
+		docker build -t javaweb:1.0 .  //注意【末尾的点】
+		-t ：指定要创建的目标镜像名
+		. ：Dockerfile 文件所在目录，可以指定Dockerfile 的绝对路径
+
+	-- 自定义java应用镜像
+		docker build -t javaweb:1.0 .  //注意【末尾的点】
+		docker images
+		docker run --name javaweb -p 8090:8090 -d javaweb:1.0
+		docker ps
+		http://192.168.5.200:8090/hello/count
+
+	-- 基于java:8-alpine镜像，将一个Java项目构建为镜像
+		FROM java:8-alpine
+		COPY ./docker-demo.jar /tmp/app.jar
+		EXPOSE 8090
+		ENTRYPOINT java -jar /tmp/app.jar
+		
+		docker build -t javaweb:2.0 .
+		docker images
+		docker run --name javaweb -p 8090:8090 -d javaweb:2.0
+		docker ps
+		http://192.168.5.200:8090/hello/count
+
+5. 【Docker-Compose】
+	-- 安装、查看版本
+		docker-compose -v  //docker-compose version 1.29.1, build c34c88b2
+
+	-- 命令补全
+		sudo curl \
+		-L https://raw.githubusercontent.com/docker/compose/1.29.1/contrib/completion/bash/docker-compose \
+		-o /etc/bash_completion.d/docker-compose
+
+	-- 启动、停止微服务集群
+		docker-compose up -d
+		docker-compose restart gateway userservice orderservice
+		docker-compose down
+		
+		docker-compose stop orderservice
+		docker-compose start orderservice
+		
+	--	注意事项
+		改代码后，要docker-compose down， 并删除镜像
+		重新上传jar
+		
+	-- 访问
+		http://192.168.5.200:8848/nacos
+		http://192.168.5.200:10086/user/2?authorization=admin
+
+5. 【Docker镜像仓库】
+	-- 安装registry仓库
+	--	带有图形化界面版本
+		(1)使用DockerCompose部署带有图象界面的DockerRegistry，命令如下：
+			version: '3.0'
+			services:
+			  registry:
+				image: registry
+				volumes:
+				  - ./registry-data:/var/lib/registry
+			  ui:
+				image: joxit/docker-registry-ui:static
+				ports:
+				  - 8080:80
+				environment:
+				  - REGISTRY_TITLE=传智教育私有仓库
+				  - REGISTRY_URL=http://registry:5000
+				depends_on:
+				  - registry
+		
+			docker-compose up
+
+		(2)配置docker信任
+			(我们的私服采用的是http协议，默认不被Docker信任)
+			# 打开要修改的文件
+			vi /etc/docker/daemon.json
+			# 添加内容：
+			"insecure-registries":["http://192.168.100.101:8080"]
+			# 重加载
+			systemctl daemon-reload
+			# 重启docker
+			systemctl restart docker
+
+		(3)访问镜像库
+			http://192.168.5.200:8080/
+
+	--	推送、拉取镜像
+		docker tag nginx:1.21.6 192.168.5.200:8080/nginx:1.0
+		docker push 192.168.5.200:8080/nginx:1.0
+		
+		docker rmi 192.168.5.200:8080/nginx:1.0
+		docker pull 192.168.5.200:8080/nginx:1.0

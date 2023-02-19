@@ -1,0 +1,15 @@
+version: '3.0'
+services:
+  registry:
+    image: registry
+    volumes:
+      - ./registry-data:/var/lib/registry
+  ui:
+    image: joxit/docker-registry-ui:static
+    ports:
+      - 8080:80
+    environment:
+      - REGISTRY_TITLE=aaaaaa
+      - REGISTRY_URL=http://registry:5000
+    depends_on:
+      - registry
