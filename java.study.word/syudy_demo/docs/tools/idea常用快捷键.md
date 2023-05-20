@@ -1,4 +1,4 @@
-﻿# 1、idea 快捷键
+﻿﻿﻿﻿﻿﻿# 1、idea 快捷键
 
 **`都提前设置为eclipse的`**
 
@@ -90,11 +90,184 @@
 
 > 想在源码中输出，可以根据以上的方式进行操作，查看代码运行状况
 
+# 3、idea 集成docker
+
+## 1、开启docker的远程访问
+
+也可以用 TLS 开启远程访问，具体可[参考]([IDEA 集成 Docker 插件实现一键远程部署 SpringBoot 应用，无需三方依赖，开源微服务全栈有来商城线上部署方式 - 有来技术团队 - 博客园 (cnblogs.com)](https://www.cnblogs.com/haoxianrui/p/15322508.html#2-docker-启用-tls))：
+
+Docker服务打开2375端口
+
+> 登录docker所在服务器，修改docker.service文件
+
+```shell
+vi /usr/lib/systemd/system/docker.service
+```
+
+**修改如下内容：**
+
+```bash
+ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+```
+
+**改为(可以直接注释上一行，然后把这一行加进去)：**
+
+```bash
+ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2375 -H unix://var/run/docker.sock
+```
+
+**重新加载配置文件**
+
+``` bash
+systemctl daemon-reload  
+```
+
+**重启服务**
+
+```bash
+systemctl restart docker.service
+```
+
+***启动以后查看端口是否开放***
+
+```bash
+netstat -nlpt
+```
+
+**需要注意的是，在生产环境中，开放2375端口会增加安全风险，因此需要配合安全设置，如防火墙和身份验证等。**
+
+## docker 指定运行环境
+
+>  docker run -d --name eureka_02 -p 8762:8762  b043548c08e1 --spring.profiles.active=dev
+
+## 2、[安装docker](https://so.csdn.net/so/search?q=安装docker&spm=1001.2101.3001.7020)插件
+
+![docker插件下载](https://img-blog.csdnimg.cn/bc2b9c0541244a8c979c94caac783d02.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6b6Z5bCn5bel5L2c5a6k,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+## 3、配置docker
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/173affd3fac842249aed76f6ffccbcb5.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6b6Z5bCn5bel5L2c5a6k,size_20,color_FFFFFF,t_70,g_se,x_16)
+
+> **填写**
+> `tcp://地址:2375`
+
+**注意：一定要Connection successful才成功了**
+
+## 4、使用该插件进行各种镜像容器的操作
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/5114d4c64d184f5bb13ba10e6808c663.png)
 
 
 
+> 如图：先打开service窗口，然后可以对容器或者镜像操作
+
+## 5、代码直接打包发布成为新镜像
+
+### 1. Dockerfile 文件
+
+在项目根目录添加 `Dockerfile` 文件
+
+```bash
+# 基础镜像
+FROM openjdk:8-jre
+
+# 维护者信息
+MAINTAINER zhangjj <17310319450@163.com>
+
+# 设置容器时区为当前时区
+RUN /bin/cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \&& echo 'Asia/Shanghai' >/etc/timezone
+
+# /tmp 目录作为容器数据卷目录，SpringBoot内嵌Tomcat容器默认使用/tmp作为工作目录，任何向 /tmp 中写入的信息不会记录进容器存储层
+# 在宿主机的/var/lib/docker目录下创建一个临时文件并把它链接到容器中的/tmp目录
+VOLUME /tmp
+
+# 复制jar包
+COPY *.jar /data/app/app.jar  #这个地址和启动命令里面的地址要一致
+
+# 容器启动执行命令
+ENTRYPOINT ["java", "-Xmx128m", "-jar", "/data/app/app.jar"]
+
+# 声明容器提供服务端口
+EXPOSE 8800
 
 
+```
+
+### 2. pom.xml文件
+
+添加 spring-boot-maven-plugin 依赖为`SpringBoot` 应用打包，指定 `finalName` 不带版本号，这样打包出的 jar 包名称就没有版本号。
+
+```xml
+<build>
+    <finalName>${project.artifactId}</finalName>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
+```
+
+### 3. Run/Debug Configurations 配置
+
+`Run/Debug Configurations` 运行/调试 配置
+
+![image-20210922082012314](https://img-blog.csdnimg.cn/img_convert/e324355f09b9773d3bea8306c0acf757.png)
+
+`Dockerfile` 配置
+
+![image-20210922083446011](https://img-blog.csdnimg.cn/img_convert/7e048e6bdbe4f1089516160397e6551b.png)
+
+添加执行目标 `Maven Goal`
+
+![image-20210922083520500](https://img-blog.csdnimg.cn/img_convert/fabc71f1e42cfaf569909492bf0eab2c.png)
+
+
+
+Command line ` 输入 `  clean package -U -DskipTests
+
+![img](https://img-blog.csdnimg.cn/img_convert/a19ba8a8a4f8ea500e9ff09a18cecdef.png)
+
+点击 `OK` 保存配置，至此，已完成所有的配置，接下来就是一键部署。
+
+### 4. SpringBoot应用一键构建部署
+
+工具栏 `Run/Debug` 选择上文的 `Docker`配置
+
+![img](https://img-blog.csdnimg.cn/img_convert/7758034ba834a63a783357e11d2c9ff1.png)
+
+点击 ▶️开始执行
+
+![img](https://img-blog.csdnimg.cn/img_convert/148db99ad2cdf7bad90e8c2c74411241.png)
+
+稍等一会儿，就可以看到启动的容器
+
+
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/b4dd01351e17475985d6b634ad73aeae.png)
+
+
+
+**docker构建项目的方式也可以通过pom文件创建mvn命令，进行构建操作**
+
+
+
+# 常用单词
+
+archive ：存档
+
+destination ：目的地
+
+extract ：提取
+
+device：设备
+
+volume: 卷
+
+inspect ：检查 检阅
+
+Mountpoint ：挂载点
 
 
 

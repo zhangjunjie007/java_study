@@ -14,6 +14,8 @@
 
 ​    [Spring编程式事务](docs/框架/spring/Spring编程式事务.md) 
 
+​    [SpringCloud学习](docs/框架/spring/SpringCloud学习.md)   [仓库地址](https://gitee.com/zhangjunjie007/spring-cloud)
+
 ### ORM框架
 
 ​     [SpringData Jpa 学习](docs/框架/orm/Sprting Data  Jpa.md)  
@@ -79,6 +81,8 @@
 ## 常用工具tips
 
 [idea常用小技巧](docs/tools/idea常用快捷键.md)
+
+[linux 相关](docs/tools/linux 常用命令.md)
 
 
 
